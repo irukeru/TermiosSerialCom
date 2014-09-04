@@ -20,7 +20,7 @@ char message[] = "rx\n";
 
 int main(void) {
 
-    openSerialPort("/dev/tty.usbserial-FTP25FYT", 115200);
+    openSerialPort("/dev/tty.usbserial-FTP25FYT", 9600);
 
     int i = 0;
 

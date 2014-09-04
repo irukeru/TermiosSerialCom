@@ -70,8 +70,10 @@ void closeSerialPort() {
  * @param message
  */
 void writeSerialPort(char* message) {
-    write(tty_fd, message, sizeof(message));
-    usleep(4000 * sizeof(message));
+    for (int i = 0; i < strlen(message); i++) {
+    	write(tty_fd, &message[i], 1);
+    	usleep(10);
+    }
 }
 
 /**
