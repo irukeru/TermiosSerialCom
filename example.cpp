@@ -16,15 +16,15 @@
 using namespace std;
 
 
-char message[] = "rx\n";
+char message[] = "rx";
 
 int main(void) {
 
-    openSerialPort("/dev/tty.usbserial-FTP25FYT", 9600);
+    openSerialPort("/dev/ttyAMA0", 115200);
 
     int i = 0;
 
-    while (i < 2) {
+    while (i < 2000) {
         writeSerialPort(message);
         char* readChar = readSerialPort();
 

@@ -16,6 +16,8 @@
 #include <fcntl.h>
 #include <termios.h>
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 /***************Libraries*****************/
 
 using namespace std;
